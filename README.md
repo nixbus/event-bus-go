@@ -36,8 +36,9 @@ import (
 
 func main() {
  nixbus := eventbus.GetNixBusHttp(eventbus.NixBusHttpOptions{
-  Token:      "your_token",
-  Passphrase: "your_passphrase",
+  Token:            "your_token",
+  Passphrase:       "your_passphrase",
+  ClientEncryption: true,
  })
 
  err := nixbus.Subscribe("event_type", eventbus.SubscriberWithAction{
@@ -78,8 +79,9 @@ import (
 
 func main() {
  nixbus := eventbus.GetNixBusHttp(eventbus.NixBusHttpOptions{
-  Token:      "your_token",
-  Passphrase: "your_passphrase",
+  Token:            "your_token",
+  Passphrase:       "your_passphrase",
+  ClientEncryption: true,
  })
 
  err := nixbus.Subscribe("event_type", eventbus.SubscriberWithAction{
@@ -123,8 +125,9 @@ import (
 
 func main() {
  nixbus := eventbus.GetNixBusHttp(eventbus.NixBusHttpOptions{
-  Token:      "your_token",
-  Passphrase: "your_passphrase",
+  Token:            "your_token",
+  Passphrase:       "your_passphrase",
+  ClientEncryption: true,
  })
 
  err := nixbus.Publish(eventbus.NixNewEvent{
