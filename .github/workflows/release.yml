@@ -1,0 +1,46 @@
+name: 🚀 Release
+on:
+  push:
+    tags:
+      - "*"
+
+permissions:
+  actions: write
+  contents: write
+  id-token: write
+
+jobs:
+  changelog:
+    name: Changelog
+    needs: [publish]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build
+        id: github_release
+        uses: mikepenz/release-changelog-builder-action@v4
+        with:
+          commitMode: true
+          configurationJson: |
+            {
+              "template": "#{{CHANGELOG}}",
+              "pr_template": "- #{{TITLE}} #{{MERGE_SHA}}",
+              "categories": [
+                {
+                    "title": "## What's Changed",
+                    "labels": []
+                }
+              ],
+              "ignore_labels": [
+                "bump"
+              ],
+              "label_extractor": [
+                {
+                  "pattern": "^(build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test|bump){1}(\\([\\w\\-\\.]+\\))?(!)?: ([\\w ])+([\\s\\S]*)",
+                  "target": "$1"
+                }
+              ]
+            }
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          body: ${{steps.github_release.outputs.changelog}}
