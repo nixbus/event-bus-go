@@ -12,7 +12,6 @@ permissions:
 jobs:
   changelog:
     name: Changelog
-    needs: [publish]
     runs-on: ubuntu-latest
     steps:
       - name: Build
