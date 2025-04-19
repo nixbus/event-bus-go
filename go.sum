@@ -1,7 +1,7 @@
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/nixbus/crypto-go v0.0.1 h1:39V+dp1m7mN5zu184u/pEG4To8oshle5XQOU2Yn2W7g=
-github.com/nixbus/crypto-go v0.0.1/go.mod h1:7rHuAX9jTlei43n91T26shqzBPQQBW8pVLfhjrM9POc=
+github.com/nixbus/crypto-go v0.0.2 h1:+mujIOJtu/RgNbFsZywDqysqqgjqwZTzm2B9P98tU8g=
+github.com/nixbus/crypto-go v0.0.2/go.mod h1:7rHuAX9jTlei43n91T26shqzBPQQBW8pVLfhjrM9POc=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/stretchr/objx v0.5.2 h1:xuMeJ0Sdp5ZMRXx/aWO6RZxdr3beISkG5/G/aIRr3pY=

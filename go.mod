@@ -3,7 +3,7 @@ module github.com/nixbus/event-bus-go
 go 1.23.8
 
 require (
-	github.com/nixbus/crypto-go v0.0.1
+	github.com/nixbus/crypto-go v0.0.2
 	github.com/stretchr/testify v1.10.0
 )
 
