@@ -1,4 +1,4 @@
-# NixBus Go Event Bus
+# NixBus Go Event Bus -
 
 NixBus Event Bus is a secure, robust, and efficient event bus over HTTP. This Go SDK allows you to integrate NixBus into your applications seamlessly, enabling decoupled event-driven architectures. Ideal for microservices, this SDK supports event publishing, subscribing, and processing with ease.
 
